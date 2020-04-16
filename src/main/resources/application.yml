@@ -1,0 +1,12 @@
+spring:
+  jedis:
+    max:
+      total: 100     #jedis总量
+      idle: 50        #空闲jedis实例最大值
+      waitmillis: 500   #当池内没有返回jedis对象时，最大等待时间
+      timout: 0      #当客户端闲置多长时间后关闭连接，如果指定为 0，表示关闭该功能，连接不会断
+    host: 127.0.0.1  # redis服务ip地址
+    port: 6379        # 端口
+    password:  # redis密码
+server:
+  port: 9999
